@@ -1,10 +1,15 @@
 import "./style.css";
 import { menu } from "./restaurantMenu.js";
-import backImage from "../download.png"
+import BurgerImage from "../images/BurgerPic1.jpg"
 
 const image = document.createElement("img");
-image.src = backImage;
+const titleHeader = document.createElement("h1");
 
-document.body.appendChild(image);
+titleHeader.textContent = "Bonez!";
+image.src = BurgerImage;
 
+const ContentSection = document.querySelector(".ContentSection");
+
+ContentSection.appendChild(titleHeader);
+//ContentSection.appendChild(image);
 console.log(menu);

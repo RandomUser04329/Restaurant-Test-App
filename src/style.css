@@ -1,3 +1,52 @@
-body { 
-    background-color: rebeccapurple;
+* { 
+    outline: 2px solid red;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(144, 119, 60);
+}
+
+.MainPage {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 500px, 500px; 
+}
+
+.MenuNavHeader {
+    height: 100px;
+    display: grid;
+    justify-items: center;
+}
+
+.NavMenu { 
+    width: 600px;
+    display: grid; 
+    grid-template-columns: 50px, 50px, 50px;
+    grid-template-rows: 50px;
+    justify-items: center;
+    align-content: end;
+    align-items: center;
+}
+
+button[id] { 
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+#HomeButton { 
+    grid-column: 1;
+}
+
+#MenuButton {
+    grid-column: 2;
+}
+
+#AboutButton { 
+    grid-column: 3;
 }
