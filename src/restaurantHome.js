@@ -1,18 +1,36 @@
-import BurgerImage from "../images/BurgerPic1.jpg";
-
+//The Main Box
 const HomeDiv = document.createElement("div");
 HomeDiv.className = "HomeDiv"; 
 
+//Header Box + Elements
+const HeaderDiv = document.createElement("div");
 const HomeHeader = document.createElement("h1");
-const HomeImage = document.createElement("img");
-HomeImage.id = "HomeBurgerImage";
-HomeHeader.id = "HomeHeader"; 
+const HomeMiniHeader = document.createElement("h2");
 
+HeaderDiv.className = "HeaderDiv";
+HomeHeader.id = "HomeHeader"; 
+HomeMiniHeader.id = "HomeMiniHeader";
 HomeHeader.textContent = "Bonez";
-HomeHeader.style.fontFamily = "MyFont1";
-HomeImage.src = BurgerImage;
-HomeDiv.appendChild(HomeHeader); 
-HomeDiv.appendChild(HomeImage);
+HomeMiniHeader.textContent = "Burgerz n Friez";
+
+HeaderDiv.appendChild(HomeHeader);
+HeaderDiv.appendChild(HomeMiniHeader);
+
+const InfoDiv = document.createElement("div");
+InfoDiv.className = "InfoDiv";
+
+const ImageInfo = document.createElement("img");
+ImageInfo.id = "InfoDiv-Image";
+const AboutParagraph = document.createElement("p");
+AboutParagraph.id = "InfoDiv-Paragraph";
+
+
+
+
+
+
+
+HomeDiv.appendChild(HeaderDiv);
 
 export { 
     HomeDiv
