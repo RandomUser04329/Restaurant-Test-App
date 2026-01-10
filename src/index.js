@@ -1,15 +1,16 @@
 import "./style.css";
-import { menu } from "./restaurantMenu.js";
-import BurgerImage from "../images/BurgerPic1.jpg"
-
-const image = document.createElement("img");
-const titleHeader = document.createElement("h1");
-
-titleHeader.textContent = "Bonez!";
-image.src = BurgerImage;
+import { HomeDiv } from "./restaurantHome.js";
+import { MenuDiv } from "./restaurantMenu.js";
+import { AboutDiv } from "./restaurantAbout.js";
 
 const ContentSection = document.querySelector(".ContentSection");
+const HomeButton = document.querySelector("#HomeButton");
+const MenuButton = document.querySelector("#MenuButton");
+const AboutButton = document.querySelector("#AboutButton");
 
-ContentSection.appendChild(titleHeader);
-//ContentSection.appendChild(image);
-console.log(menu);
+ContentSection.appendChild(HomeDiv);
+
+HomeButton.addEventListener("click",() => { 
+    HomeDiv.style.display = "grid";
+    ContentSection.appendChild(HomeDiv);
+})
