@@ -16,14 +16,24 @@ HomeMiniHeader.textContent = "Burgerz n Friez";
 HeaderDiv.appendChild(HomeHeader);
 HeaderDiv.appendChild(HomeMiniHeader);
 
-const InfoDiv = document.createElement("div");
-InfoDiv.className = "InfoDiv";
 
+//About the Restaurant Div + Elements
+const AboutDiv = document.createElement("div");
+AboutDiv.className = "AboutDiv";
 const ImageInfo = document.createElement("img");
 ImageInfo.id = "InfoDiv-Image";
 const AboutParagraph = document.createElement("p");
 AboutParagraph.id = "InfoDiv-Paragraph";
 
+//Restaurant Hours Div + Elements
+
+const HoursDiv = document.createElement("div");
+HoursDiv.className = "HoursDiv";
+
+
+
+
+//Restaurant Location Div + Elements
 
 
 
@@ -31,6 +41,8 @@ AboutParagraph.id = "InfoDiv-Paragraph";
 
 
 HomeDiv.appendChild(HeaderDiv);
+HomeDiv.appendChild(AboutDiv);
+HomeDiv.appendChild(HoursDiv);
 
 export { 
     HomeDiv

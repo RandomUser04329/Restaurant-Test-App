@@ -15,22 +15,24 @@ body {
 
 .MainPage {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(400px, 1fr);
     grid-template-rows: 300px, 1fr;
     justify-items: center;
 }
 
 .MenuNavHeader {
     height: 100px;
-    width: 100vw;
+    width: max(500px, 50vw);
     display: grid;
     justify-items: center;
-    background-color: white;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    background-color: rgb(255, 255, 255);
     border-bottom: 4px solid rgb(0, 0, 0);
 } 
 
 .NavMenu { 
-    width: clamp(500px, 40vw, 40vw);
+    width: max(500px, 50vw);
     display: grid; 
     grid-template-columns: 50px, 50px, 50px;
     grid-template-rows: 50px;
@@ -76,11 +78,13 @@ button[id]:hover {
     grid-row: 2;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(500px, 1fr);
-    background-color: rgb(255, 255, 255);
+    grid-template-rows: repeat(auto-fit, minmax(500px, 1fr));
+    background-color: rgb(0, 0, 0);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-    height: clamp(500px, 85vh, 100vh);
-    width: clamp(500px, 85vw, 100vw);
+    justify-items: center;
+    align-content: center;
+    height: max(85vh);
+    width: max(80vw);
 }
 
 
@@ -92,16 +96,18 @@ button[id]:hover {
 
 .HomeDiv { 
     display: grid;
-    grid-template-rows: 200px 1fr;
+    grid-template-rows: repeat(auto-fit, 300px);
     grid-template-columns: 1fr;
+    justify-content: center;
     justify-items: center;
-    color: black;
-    height: clamp(500px, 85vh, 100vh);
-    width: clamp(500px, 85vw, 100vw);
+    align-content: center;
+    color: rgb(0, 0, 0);
+    height: max(85vh);
+    width: max(80vw);
 }
 
 .HeaderDiv { 
-    width: 500px;
+    width: 400px;
     height: 130px;
     display: grid;
     grid-template-rows: 100px 30px;
@@ -112,7 +118,7 @@ button[id]:hover {
     font-family: MainFont;
     text-align: center;
     justify-self: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 92px;
     width: 300px;
     height: 90px;
@@ -122,9 +128,39 @@ button[id]:hover {
     font-family: MainFont;
     text-align: center;
     justify-self: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 24px;
     width: 200px;
     height: 30px;
 }
 
+/*About the Restaurant + Styles*/
+
+.AboutDiv { 
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255);
+    height: max(200px, 40vh);
+    width: max(400px, 60vw);
+}
+
+
+/* Restaurant Hours + Styles */
+
+.HoursDiv { 
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    border-radius: 40px;
+    background-color: rgb(255, 255, 255);
+    height: max(200px, 40vh);
+    width: max(400px, 60vw);
+}
+
+
+
+/* Restaurant Location + Styles */
