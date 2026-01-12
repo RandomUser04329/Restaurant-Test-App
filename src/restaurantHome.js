@@ -17,6 +17,10 @@ HeaderDiv.appendChild(HomeHeader);
 HeaderDiv.appendChild(HomeMiniHeader);
 
 
+//Restaurant Divs for repeating rows w/o header
+const HomeBoxes = document.createElement("div");
+HomeBoxes.className = "RestaurantDivs";
+
 //About the Restaurant Div + Elements
 const AboutDiv = document.createElement("div");
 AboutDiv.className = "AboutDiv";
@@ -31,18 +35,17 @@ const HoursDiv = document.createElement("div");
 HoursDiv.className = "HoursDiv";
 
 
-
-
 //Restaurant Location Div + Elements
 
-
-
-
+const LocationDiv = document.createElement("div");
+LocationDiv.className = "LocationDiv"; 
 
 
 HomeDiv.appendChild(HeaderDiv);
-HomeDiv.appendChild(AboutDiv);
-HomeDiv.appendChild(HoursDiv);
+HomeDiv.appendChild(HomeBoxes);
+HomeBoxes.appendChild(AboutDiv);
+HomeBoxes.appendChild(HoursDiv);
+HomeBoxes.appendChild(LocationDiv);
 
 export { 
     HomeDiv
