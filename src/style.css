@@ -16,9 +16,8 @@ body {
 .MainPage {
     display: grid;
     grid-template-columns: minmax(500px, 1fr);
-    grid-template-rows: 300px, 1fr;
+    grid-template-rows: 300px 1fr auto;
     justify-items: center;
-    align-content: center;
 }
 
 .MenuNavHeader {
@@ -84,6 +83,18 @@ button[id]:hover {
 }
 
 
+.FooterDiv { 
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 10px;
+    width: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    place-items: center;
+    place-content: center;
+}
+
+
 
 /* Custom Made classes for appended elements */
 
@@ -93,6 +104,8 @@ button[id]:hover {
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
+    align-content: center;
+    justify-content: center;
     color: rgb(0, 0, 0);
 }
 
@@ -123,14 +136,13 @@ button[id]:hover {
 /* Restaurant Div setting for repeating columns */
 .RestaurantDivs {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 600px);
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-template-rows: 1fr;
-    column-gap: 110px;
-    row-gap: 10px;
+    justify-content:space-evenly;
+    row-gap: 20px;
     color: rgb(0, 0, 0);
     justify-items: center;
-    justify-content: center;
-    width: max(90vw, 500px);
+    width: max(500px, 85vw);
 }
 
 
@@ -144,7 +156,7 @@ button[id]:hover {
     grid-template-columns: 1fr;
     border-radius: 40px;
     background-color: rgb(255, 255, 255);
-    height: max(400px, 20vh);
+    height: max(500px, 20vh);
     width: max(500px, 40vw);
 }
 
@@ -157,7 +169,7 @@ button[id]:hover {
     grid-template-columns: 1fr;
     border-radius: 40px;
     background-color: rgb(255, 255, 255);
-    height: max(400px, 20vh);
+    height: max(500px, 20vh);
     width: max(500px, 40vw);
 }
 
@@ -171,6 +183,23 @@ button[id]:hover {
     grid-template-columns: 1fr;
     border-radius: 40px;
     background-color: rgb(255, 255, 255);
-    height: max(400px, 20vh);
+    height: max(500px, 20vh);
     width: max(500px, 40vw);
+}
+
+
+
+
+
+/* Menu Div + settings */
+
+.MenuDiv { 
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
 }
