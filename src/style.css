@@ -1,4 +1,5 @@
-  * { 
+
+ * { 
     outline: 2px solid red;
 }
 @font-face { 
@@ -14,10 +15,12 @@ body {
 }
 
 .MainPage {
+    height: 100vh;
     display: grid;
-    grid-template-columns: minmax(500px, 1fr);
-    grid-template-rows: 300px 1fr auto;
+    grid-template-columns: minmax(600px, 1fr);
+    grid-template-rows: repeat(3, auto);
     justify-items: center;
+    justify-content: center;
 }
 
 .MenuNavHeader {
@@ -80,14 +83,15 @@ button[id]:hover {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     place-items: center;
     place-content: center;
+    
 }
 
 
 .FooterDiv { 
     background-color: rgb(0, 0, 0);
+    grid-row: 3;
     color: white;
     font-size: 10px;
-    width: auto;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     place-items: center;
@@ -110,26 +114,24 @@ button[id]:hover {
 }
 
 .HeaderDiv { 
-    height: 160px;
+    font-family: MainFont;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: auto;
     width: 300px;
     display: grid;
-    grid-template-rows: 120px 30px;
-    justify-items: center;
+    grid-template-rows: auto auto;
     align-items: center;
+    align-content: center;
 }
 
 #HomeHeader {
-    font-family: MainFont;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-size: 100px;
+    font-size: 80px;
+    margin: 0;
 }
 
 #HomeMiniHeader { 
-    font-family: MainFont;
-    text-align: center;
-    justify-self: center;
-    color: rgb(255, 255, 255);
+    margin: 0;
     font-size: 24px;
 }
 
@@ -138,18 +140,14 @@ button[id]:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-template-rows: 1fr;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     row-gap: 20px;
     color: rgb(0, 0, 0);
     justify-items: center;
     width: max(500px, 85vw);
 }
 
-
-
-
 /*About the Restaurant + Styles*/
-
 .AboutDiv { 
     display: grid;
     grid-template-rows: 200px 1fr;
@@ -160,9 +158,7 @@ button[id]:hover {
     width: max(500px, 40vw);
 }
 
-
 /* Restaurant Hours + Styles */
-
 .HoursDiv { 
     display: grid;
     grid-template-rows: 200px 1fr;
@@ -173,10 +169,7 @@ button[id]:hover {
     width: max(500px, 40vw);
 }
 
-
-
 /* Restaurant Location + Styles */
-
 .LocationDiv {
     display: grid;
     grid-template-rows: 200px 1fr;
@@ -192,14 +185,85 @@ button[id]:hover {
 
 
 /* Menu Div + settings */
-
 .MenuDiv { 
     display: grid;
-    grid-template-rows: 200px 1fr;
+    grid-template-rows: 150px 1fr;
     grid-template-columns: 1fr;
     justify-items: center;
-    align-items: center;
-    align-content: center;
+    color: rgb(255, 255, 255);
+}
+
+#MenuHeader { 
+    font-size: 54px;
+    font-family: MainFont;
+}
+
+.Menus { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 650px));
+    grid-template-rows: 1fr;
+    gap: 15px;
     justify-content: center;
-    color: rgb(0, 0, 0);
+    justify-items: center;
+    width: max(600px, 85vw);
+}
+
+.LunchMenuDiv { 
+    display: grid;
+    background-color: white;
+    border-radius: 30px;
+    width: max(400px, 40vw);
+    height: max(450px, 80vh);
+}
+
+.DinnerMenuDiv { 
+    display: grid;
+    background-color: white;
+    border-radius: 30px;
+    width: max(400px, 40vw);
+    height: max(450px, 80vh);
+}
+
+
+/* Contact Divs + settings */
+
+.ContactDiv { 
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    color: rgb(255, 255, 255);
+}
+
+#ContactHeader { 
+    font-size: 50px;
+    font-family: MainFont;
+    text-align: center;
+}
+
+.ContactMainDiv { 
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 650px));
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-content: center;
+    justify-items: center;
+    width: max(600px, 85vw);
+}
+
+.PhoneContactDiv {
+    display: grid;
+    background-color: white;
+    border-radius: 30px;
+    width: max(400px, 40vw);
+    height: max(450px, 30vh);
+}
+
+.OrderHereDiv { 
+    display: grid;
+    background-color: white;
+    border-radius: 30px;
+    width: max(400px, 40vw);
+    height: max(450px, 30vh);
 }
