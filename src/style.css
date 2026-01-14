@@ -1,5 +1,5 @@
 
- * { 
+  *{ 
     outline: 2px solid red;
 }
 @font-face { 
@@ -15,9 +15,9 @@ body {
 }
 
 .MainPage {
-    height: 100vh;
+    height: auto;
     display: grid;
-    grid-template-columns: minmax(600px, 1fr);
+    grid-template-columns: minmax(600px, auto);
     grid-template-rows: repeat(3, auto);
     justify-items: center;
     justify-content: center;
@@ -200,7 +200,7 @@ button[id]:hover {
 
 .Menus { 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 650px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
     grid-template-rows: 1fr;
     gap: 15px;
     justify-content: center;
@@ -225,6 +225,14 @@ button[id]:hover {
 }
 
 
+
+
+
+
+
+
+
+
 /* Contact Divs + settings */
 
 .ContactDiv { 
@@ -244,7 +252,7 @@ button[id]:hover {
 .ContactMainDiv { 
     color: white;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 650px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
     grid-template-rows: 1fr;
     gap: 15px;
     justify-content: center;
@@ -266,4 +274,66 @@ button[id]:hover {
     border-radius: 30px;
     width: max(400px, 40vw);
     height: max(450px, 30vh);
+}
+
+#PhoneBox { 
+    font-family: MainFont;
+    background-color: black;
+    border-radius: 30px; 
+    margin: 15px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto; 
+    grid-template-rows: repeat(auto-fit, 60px);
+    justify-items: start;
+    align-items: start;
+}
+
+#PhoneContactHeader { 
+    font-size: 32px;
+}
+
+#PhonePara { 
+    font-size: 18px;
+}
+
+
+#OrderBox { 
+    font-family: MainFont;
+    background-color: black;
+    border-radius: 30px; 
+    margin: 15px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto; 
+    grid-template-rows: repeat(5, 60px);
+    justify-items: start;
+    align-items: start;
+}
+
+#OrderHeader { 
+    font-size: 32px;
+}
+
+#InstaPara { 
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+}
+
+#InstaLogo { 
+    grid-column: 1;
+    width: 30px;
+    height: 30px;
+    filter: invert();
+}
+
+#TikTokPara { 
+
+}
+
+#TikTokLogo { 
+    width: 30px;
+    height: 30px;
+    filter: invert();
 }

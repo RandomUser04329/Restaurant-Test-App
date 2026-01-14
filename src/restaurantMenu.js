@@ -3,7 +3,7 @@ const MenuDiv = document.createElement("div");
 MenuDiv.className = "MenuDiv";
 const MenuHeader = document.createElement("h1");
 MenuHeader.id = "MenuHeader";
-MenuHeader.textContent = "Our Menu's"
+MenuHeader.textContent = "Our Menu"
 
 //Menus Divs + Names
 const MenuSection = document.createElement("div");
