@@ -201,7 +201,7 @@ button[id]:hover {
 /* For both the menus */
 .Menus { 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 630px));
     grid-template-rows: 1fr;
     gap: 15px;
     justify-content: center;
@@ -210,7 +210,7 @@ button[id]:hover {
 }
 
 
-/* Lunch Menu boxes + styles */
+/* All Day Menu boxes + styles */
 .AllDayMenuDiv { 
     display: grid;
     background-color: white;
@@ -219,7 +219,7 @@ button[id]:hover {
     height: max(450px, 80vh);
 }
 
-.AllDayMenuBox , .BeveragesMenuBox { 
+.AllDayMenuBox { 
     width: auto;
     height: auto;
     margin: 15px;
@@ -233,26 +233,97 @@ button[id]:hover {
 
 #AllDayBoxHeader { 
     font-size: 42px;
+    font-family: MainFont;
 }
 
 
 
 
 
-/* Dinner Menu boxes + styles */
-.BeveragesMenuDiv { 
+/* Sides Menu boxes + styles */
+.SidesDrinksMenuDiv { 
     display: grid;
     background-color: white;
     border-radius: 30px;
     width: max(400px, 40vw);
-    height: max(450px, 80vh);
+    height: fit-content;
 }
 
+.SidesMenuBox { 
+    width: auto;
+    height: max-content;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(auto-fit, auto);
+    justify-items: center;
+}
 
+#SidesBoxHeader {
+    height: 40px;
+    font-family: MainFont;
+    font-size: 42px;
+    margin: 10px;
+    justify-self: center;
+}
 
+.SidesMenuDetailsBox { 
+    width: auto;
+    height: auto;
+    font-family: MainFont;
+    margin: 10px;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
 
+#SidesDetailsItems, #SidesDetailsPrices { 
+    white-space: pre;
+    margin: 0;
+}
 
+#SidesDetailsPrices { 
+    text-align: end;
+}
 
+/* Drinks Menu boxes + styles */
+.DrinksMenuBox { 
+    width: auto;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(auto-fit, 1fr);
+    justify-items: start;
+}
+
+#DrinksBoxHeader {
+    font-family: MainFont;
+    font-size: 42px;
+    margin: 10px;
+    justify-self: center;
+}
+
+.DrinksMenuDetailsBox { 
+    margin: 10px;
+    margin-top: 0;
+}
+
+#DrinksDetailsItems, #DrinksDetailsPrices { 
+    white-space: pre;
+}
 
 
 
@@ -276,7 +347,7 @@ button[id]:hover {
 .ContactMainDiv { 
     color: white;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 630px));
     grid-template-rows: 1fr;
     gap: 15px;
     justify-content: center;
@@ -341,7 +412,6 @@ button[id]:hover {
 }
 
 .InstaTagBox { 
-    padding: 0;
     width: auto;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -367,8 +437,7 @@ button[id]:hover {
     filter: invert();
 }
 
-.TikTokTagBox { 
-    padding: 0;
+.TikTokTagBox {
     width: auto;
     display: grid;
     grid-template-rows: 1fr 1fr;
