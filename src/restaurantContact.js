@@ -39,6 +39,8 @@ const OrderHereDiv = document.createElement("div");
         OrderHeader.id = "OrderHeader";
         OrderHeader.textContent = "Follow our Socials!"
 //Instagram data
+const InstaTagBox = document.createElement("div");
+InstaTagBox.className = "InstaTagBox";
     const InstaHeader = document.createElement("h1");
         InstaHeader.id = "InstaHeader";
         InstaHeader.textContent = "Instagram:"
@@ -49,6 +51,8 @@ const OrderHereDiv = document.createElement("div");
         InstaPara.id = "InstaPara";
         InstaPara.textContent = "TheRealBonezBurgerz"
 //Tik tok Data
+const TTTagBox = document.createElement("div");
+TTTagBox.className = "TikTokTagBox";
     const TikTokHeader = document.createElement("h1");
         TikTokHeader.id = "TikTokHeader";
         TikTokHeader.textContent = "TikTok:"
@@ -76,13 +80,15 @@ ContactBox.appendChild(EmailContactPara);
 OrderHereDiv.appendChild(OrderBox);
 OrderBox.appendChild(OrderHeader);
 
-OrderBox.appendChild(InstaHeader);
-OrderBox.appendChild(InstaPara);
-InstaPara.appendChild(InstaLogo);
+OrderBox.appendChild(InstaTagBox);
+InstaTagBox.appendChild(InstaHeader);
+InstaTagBox.appendChild(InstaPara);
+InstaTagBox.appendChild(InstaLogo);
 
-OrderBox.appendChild(TikTokHeader);
-OrderBox.appendChild(TikTokPara);
-TikTokPara.appendChild(TTLogo);
+OrderBox.appendChild(TTTagBox);
+TTTagBox.appendChild(TikTokHeader);
+TTTagBox.appendChild(TikTokPara);
+TTTagBox.appendChild(TTLogo);
 
 
 export {
