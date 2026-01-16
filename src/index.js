@@ -50,5 +50,7 @@ ContactButton.addEventListener("click", () => {
 });
 
 
+//ForTestingPurposes
+//ShowPage(MenuDiv);
 ShowPage(HomeDiv);
 ButtonStyles(HomeButton);

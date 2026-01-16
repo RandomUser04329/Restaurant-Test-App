@@ -203,7 +203,6 @@ button[id]:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-template-rows: 1fr;
-    justify-content: center;
     justify-items: center;
     align-content: center;
     width: max(300px, 85vw);
@@ -220,6 +219,7 @@ button[id]:hover {
 }
 
 .AllDayMenuBox { 
+    font-family: MainFont;
     width: auto;
     height: auto;
     margin: 15px;
@@ -228,15 +228,43 @@ button[id]:hover {
     border-radius: 30px;
     display: grid;
     grid-template-columns: 1fr; 
-    grid-template-rows: repeat(auto-fit, auto);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    justify-content: center;
+    justify-items: center;
 }
 
 #AllDayBoxHeader { 
     font-size: 42px;
-    font-family: MainFont;
+    text-align: center;
 }
 
+#AllDayBoxHeader2 { 
+    width: auto;
+    font-size: 16px;
+    text-align: center;
+    align-self: center;
+}
 
+.AllDayMenuDetailsBox {
+    width: max(350px, 30vw);
+    margin-left: 10px; margin-right: 10px;
+    white-space: pre;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#AllDayDetailsItems, #AllDayDetailsPrices { 
+    font-size: 18px;
+}
+
+#AllDayDetaisItems { 
+    text-align: start;
+}
+
+ #AllDayDetailsPrices {
+    text-align: end;
+ } 
 
 
 
@@ -259,28 +287,28 @@ button[id]:hover {
     color: white;
     border-radius: 30px;
     display: grid;
-    grid-template-columns: 1fr; 
-    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 80px;
     justify-items: center;
+    align-content: center;
 }
 
 #SidesBoxHeader {
-    height: 40px;
     font-family: MainFont;
     font-size: 42px;
-    margin: 10px;
-    justify-self: center;
+    margin: 0;
+    height: 50px;
 }
 
 .SidesMenuDetailsBox { 
-    width: auto;
-    height: auto;
+    width: max(350px, 25vw);
     font-family: MainFont;
-    margin: 10px;
-    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    align-content: center;
 }
 
 #SidesDetailsItems, #SidesDetailsPrices { 
@@ -306,29 +334,32 @@ button[id]:hover {
     border-radius: 30px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-rows: 100px 150px;
     justify-items: center;
+    align-content: center;
 }
 
 #DrinksBoxHeader {
+    margin: 0;
     height: 50px;
     font-family: MainFont;
     font-size: 42px;
-    margin-top: 10px;
 }
 
 .DrinksMenuDetailsBox { 
-    width: auto;
-    height: auto;
-    margin: 10px;
-    margin-top: 0;
+    width: max(350px, 25vw);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-template-rows: auto;
 }
 
 #DrinksDetailsItems, #DrinksDetailsPrices { 
+    margin: 0;
     white-space: pre;
+}
+
+#DrinksDetailsPrices { 
+    text-align: end;
 }
 
 
@@ -430,6 +461,7 @@ button[id]:hover {
     margin: 0;
     font-size: 32px;
 }
+
 #InstaPara { 
     grid-column: 2;
     font-size: 16px;

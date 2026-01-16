@@ -16,10 +16,23 @@ AllDaySection.className = "AllDayMenuDiv";
         const AllDayBoxHeader = document.createElement("h1");
         AllDayBoxHeader.id = "AllDayBoxHeader";
         AllDayBoxHeader.textContent = "All Day";
+        const AllDayBoxHeader2 = document.createElement("h2");
+        AllDayBoxHeader2.id = "AllDayBoxHeader2";
+        AllDayBoxHeader2.textContent = "All come with Lettuce, tomato, Cheese (American or Swiss), Pickles";
     const AllDayMenuDetails = document.createElement("div");
     AllDayMenuDetails.className = "AllDayMenuDetailsBox";
-        const AllDayDetailsPara = document.createElement("p");
-        AllDayDetailsPara.id = "AllDayDetailsPara";
+        const AllDayDetailsItems = document.createElement("p");
+        AllDayDetailsItems.id = "AllDayDetailsItems";
+        AllDayDetailsItems.textContent = "Single-Bone\nDouble-Bone\nTriple-Bone\nAdd Another Patty\n\n" +
+        "Chicken-Bone\n(Grilled or Cripsy)\n\n" + 
+        "Sub bun for:\nGluten-Free Bun\nLettuce-wrap\nOnion-wrap\nTomato-wrap\n" +
+        "\nExtra Toppings:\nBacon\nJalapenos\nOnions";
+        const AllDayDetailsPrices = document.createElement("p");
+        AllDayDetailsPrices.id = "AllDayDetailsPrices";
+        AllDayDetailsPrices.textContent = "$3.19\n$3.69\n$4.29\n$1.19\n\n" + 
+        "\n$3.49\n\n\n\n\n\n\n\n\n$1.09\n\n$0.39";
+
+
     
 
 
@@ -60,7 +73,7 @@ SidesDrinksSection.className = "SidesDrinksMenuDiv";
             "Fountain Drink\nUn-Sweet Tea\nSweet Tea\nBudLight\nModelo\nMichelob\nWater"; 
             const DrinksDetailsPrices = document.createElement("p");
             DrinksDetailsPrices.id = "DrinksDetailsPrices";
-            DrinksDetailsPrices.textContent = "\nRegular:$2.29\nLarge:$2.89\n\n\n$3.59";
+            DrinksDetailsPrices.textContent = "\nRegular:$2.29\nLarge:$2.89\n\n\n$3.59\n$1.09";
 
 
 
@@ -73,8 +86,10 @@ MenuSection.appendChild(SidesDrinksSection);
 
 AllDaySection.appendChild(AllDayBox);
 AllDayBox.appendChild(AllDayBoxHeader);
+AllDayBox.appendChild(AllDayBoxHeader2);
 AllDayBox.appendChild(AllDayMenuDetails);
-AllDayMenuDetails.appendChild(AllDayDetailsPara);
+AllDayMenuDetails.appendChild(AllDayDetailsItems);
+AllDayMenuDetails.appendChild(AllDayDetailsPrices);
 
 SidesDrinksSection.appendChild(SidesBox);
 SidesBox.appendChild(SidesBoxHeader);
