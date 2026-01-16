@@ -60,6 +60,7 @@ SidesDrinksSection.className = "SidesDrinksMenuDiv";
             "Fountain Drink\nUn-Sweet Tea\nSweet Tea\nBudLight\nModelo\nMichelob\nWater"; 
             const DrinksDetailsPrices = document.createElement("p");
             DrinksDetailsPrices.id = "DrinksDetailsPrices";
+            DrinksDetailsPrices.textContent = "\nRegular:$2.29\nLarge:$2.89\n\n\n$3.59";
 
 
 
