@@ -10,8 +10,8 @@ const HomeMiniHeader = document.createElement("h2");
 HeaderDiv.className = "HeaderDiv";
 HomeHeader.id = "HomeHeader"; 
 HomeMiniHeader.id = "HomeMiniHeader";
-HomeHeader.textContent = "Bonez";
-HomeMiniHeader.textContent = "Burgerz n Friez";
+HomeHeader.textContent = "";
+HomeMiniHeader.textContent = "";
 
 HeaderDiv.appendChild(HomeHeader);
 HeaderDiv.appendChild(HomeMiniHeader);
@@ -24,10 +24,12 @@ HomeBoxes.className = "RestaurantDivs";
 //About the Restaurant Div + Elements
 const AboutDiv = document.createElement("div");
 AboutDiv.className = "AboutDiv";
-const ImageInfo = document.createElement("img");
-ImageInfo.id = "InfoDiv-Image";
-const AboutParagraph = document.createElement("p");
-AboutParagraph.id = "InfoDiv-Paragraph";
+    const DivForAbout = document.createElement("div");
+    DivForAbout.className = "DivForAbout";
+        const ImageInfo = document.createElement("img");
+        ImageInfo.id = "InfoDiv-Image";
+        const AboutParagraph = document.createElement("p");
+        AboutParagraph.id = "InfoDiv-Paragraph";
 
 //Restaurant Hours Div + Elements
 
@@ -43,7 +45,13 @@ LocationDiv.className = "LocationDiv";
 
 HomeDiv.appendChild(HeaderDiv);
 HomeDiv.appendChild(HomeBoxes);
+HeaderDiv.appendChild(HomeHeader);
+HeaderDiv.appendChild(HomeMiniHeader);
+
 HomeBoxes.appendChild(AboutDiv);
+AboutDiv.appendChild(DivForAbout);
+DivForAbout.appendChild(ImageInfo);
+DivForAbout.appendChild(AboutParagraph)
 HomeBoxes.appendChild(HoursDiv);
 HomeBoxes.appendChild(LocationDiv);
 

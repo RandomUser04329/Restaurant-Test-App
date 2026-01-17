@@ -137,6 +137,7 @@ button[id]:hover {
 
 /* Restaurant Div setting for repeating columns */
 .RestaurantDivs {
+    font-family: MainFont;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-template-rows: 1fr;
@@ -150,13 +151,25 @@ button[id]:hover {
 /*About the Restaurant + Styles*/
 .AboutDiv { 
     display: grid;
-    grid-template-rows: 200px 1fr;
-    grid-template-columns: 1fr;
     border-radius: 40px;
     background-color: rgb(255, 255, 255);
     height: max(500px, 20vh);
     width: max(500px, 40vw);
+    justify-items: center;
+    justify-content: center;
 }
+
+.DivForAbout { 
+    margin: 10px;
+    background-color: black;
+    border-radius: 40px;
+    color: white;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: 1fr;
+
+}
+
 
 /* Restaurant Hours + Styles */
 .HoursDiv { 
@@ -172,8 +185,6 @@ button[id]:hover {
 /* Restaurant Location + Styles */
 .LocationDiv {
     display: grid;
-    grid-template-rows: 200px 1fr;
-    grid-template-columns: 1fr;
     border-radius: 40px;
     background-color: rgb(255, 255, 255);
     height: max(500px, 20vh);
