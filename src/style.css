@@ -137,15 +137,15 @@ button[id]:hover {
 
 /* Restaurant Div setting for repeating columns */
 .RestaurantDivs {
+    padding: 10px;
     font-family: MainFont;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-template-rows: 1fr;
-    justify-content: space-evenly;
-    row-gap: 20px;
-    color: rgb(0, 0, 0);
-    justify-items: center;
-    width: max(500px, 85vw);
+    row-gap: 10px;
+    place-items: center;
+    place-content: center;
+    width: max(600px, 90vw);
 }
 
 /*About the Restaurant + Styles*/
@@ -153,21 +153,52 @@ button[id]:hover {
     display: grid;
     border-radius: 40px;
     background-color: rgb(255, 255, 255);
-    height: max(500px, 20vh);
+    height: max(500px, 60vh);
     width: max(500px, 40vw);
-    justify-items: center;
-    justify-content: center;
 }
 
 .DivForAbout { 
-    margin: 10px;
+    margin: 15px;
+    font-family: MainFont;
     background-color: black;
-    border-radius: 40px;
     color: white;
+    border-radius: 30px;
     display: grid;
-    grid-template-rows: repeat(auto-fit, 1fr);
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr;
+    width: auto;
+    height: auto;
+}
 
+#InfoDiv-Image {
+    object-fit: cover;
+    object-position: -150px;
+    width: 200px;
+    height: 450px;
+    margin: 10px;
+    border-radius: 30px;
+}
+
+.AboutParagraphDiv { 
+    margin: 10px;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 250px;
+    justify-items: start;
+}
+
+#AboutParagraphHeader { 
+    font-size: 32px;
+    text-align: center;
+    color: white;
+}
+
+#InfoDiv-Paragraph {
+    white-space: pre;
+    width: auto;
+    height: auto;
 }
 
 
