@@ -35,16 +35,21 @@ AboutDiv.className = "AboutDiv";
         AboutParagraphHeader.textContent = "About Us"
         const AboutParagraph = document.createElement("p");
         AboutParagraph.id = "InfoDiv-Paragraph";
-        AboutParagraph.textContent = "Our Restaurant was started in the idea" + 
-        "of being able to serve customers cheeseburgers that" +
-        "aren't filled preservatives, and are not cooked" +
-        "in harmful oils. As well for the meat being" + 
-        "Grass Fed and 100% Ground beef.";
+        AboutParagraph.textContent = "Our Restaurant was started in the idea of being able to serve customers cheeseburgers that aren't filled preservatives, and are not cooked in harmful oils. As well for the meat being Grass Fed and 100% Ground beef.";
 
 //Restaurant Hours Div + Elements
 
 const HoursDiv = document.createElement("div");
 HoursDiv.className = "HoursDiv";
+    const ChildHoursDiv = document.createElement("div");
+    ChildHoursDiv.className = "ChildHoursDiv";
+        const ChildDivHeader = document.createElement("h1");
+        ChildDivHeader.id = "ChildDivHeader";
+        ChildDivHeader.textContent = "Our Hours"
+        const ChildDivParagraph = document.createElement("p");
+        ChildDivParagraph.id = "ChildDivParagraph";
+        ChildDivParagraph.textContent = "Monday-Friday: 11:00AM - 10:00PM\n\nSaturday: 11:00AM - 12:00PM\n\nSunday: CLOSED"
+
 
 
 //Restaurant Location Div + Elements
@@ -66,6 +71,12 @@ AboutParagraphDiv.appendChild(AboutParagraphHeader);
 AboutParagraphDiv.appendChild(AboutParagraph);
 
 HomeBoxes.appendChild(HoursDiv);
+HoursDiv.appendChild(ChildHoursDiv);
+ChildHoursDiv.appendChild(ChildDivHeader);
+ChildHoursDiv.appendChild(ChildDivParagraph);
+
+
+
 HomeBoxes.appendChild(LocationDiv);
 
 export { 
